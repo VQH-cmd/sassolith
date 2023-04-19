@@ -1,7 +1,7 @@
 {
 	"name": "@vqh-cmd/sassolith",
 	"version": "2.0.0",
-	"description": "",
+	"description": "CSS utility using SASS & SCSS.",
 	"main": "index.sass",
 	"repository": {
 		"type": "git",
