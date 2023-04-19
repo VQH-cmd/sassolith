@@ -1,0 +1,185 @@
+//================================================================
+// SECTION Appearance
+//
+// @appearance
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": appear-none,
+	"style": appearance,
+	"value": none,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+// !SECTION Appearance
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Outline
+//
+// @outline
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": outline-none,
+	"style": outline,
+	"value": 0,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+// !SECTION Outline
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Cursor
+//
+// @cursor
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		cur-auto,
+		cur-default,
+		cur-pointer,
+		cur-wait,
+		cur-text,
+		cur-move,
+		cur-not-allowed,
+	),
+	"style": cursor,
+	"value": (
+		auto,
+		default,
+		pointer,
+		wait,
+		text,
+		move,
+		not-allowed,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+// !SECTION Cursor
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Pointer Events
+//
+// @pointer @events
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		pe-none,
+		pe-auto,
+	),
+	"style": pointer-events,
+	"value": (
+		none,
+		auto,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Pointer Events
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Resize
+//
+// @resize
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		resize-none,
+		resize-v,
+		resize-h,
+		resize-all,
+	),
+	"style": resize,
+	"value": (
+		none,
+		vertical,
+		horizontal,
+		both,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Resize
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION User Select
+//
+// @user @select
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		sel-none,
+		sel-text,
+		sel-all,
+		sel-auto,
+	),
+	"style": user-select,
+	"value":(
+		none,
+		text,
+		all,
+		auto,
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+// !SECTION User Select
+//________________________________________________________

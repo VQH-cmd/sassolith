@@ -1,0 +1,40 @@
+$separate: (
+	core: "\\:",
+	formula: "-"
+);
+
+$timing_function: (
+	ttf: cubic-bezier(0.45, 0.05, 0.55, 0.95),
+);
+
+$important: "-i";
+
+$pseudo: (
+	before: "bf",
+	after: "af",
+	list: (
+		"ph": "::placeholder",
+		"sel": "::selection",
+		"req": ":required",
+		"ac": ":active",
+		"fo": ":focus",
+		"fw": ":focus-within",
+		"ho": ":hover",
+		"vs": ":visited",
+	),
+);
+
+$group: (
+	active: true,
+	parent: "g",
+	child: "g-",
+);
+
+$hyperion: (
+	active: true,
+	list: (
+		q1: "q1",
+		q2: "q2",
+		q3: "q3",
+	),
+);

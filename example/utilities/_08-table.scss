@@ -1,0 +1,60 @@
+//================================================================
+// SECTION Border Collapse
+//
+// @tab @border @collapse
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		tab-collapse,
+		tab-separate,
+	),
+	"style": (
+		border-collapse,
+	),
+	"value": (
+		collapse,
+		separate,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+// !SECTION Border Collapse
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Table Layout
+//
+// @tab @layout
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		tab-auto,
+		tab-fixed,
+	),
+	"style": (
+		table-layout,
+	),
+	"value": (
+		auto,
+		fixed,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+// !SECTION Table Layout
+//________________________________________________________

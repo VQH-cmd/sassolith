@@ -1,0 +1,343 @@
+//================================================================
+// SECTION Flex
+//
+// @flex @direction @wrap
+//================================================================
+//________________________________________________________
+// STUB Direction
+
+@include Sassolith((
+	"class": (
+		fd-row,
+		fd-rerow,
+		fd-col,
+		fd-recol,
+	),
+	"style": flex-direction,
+	"value": (
+		row,
+		row-reverse,
+		column,
+		column-reverse,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+//________________________________________________________
+// STUB Wrap
+
+@include Sassolith((
+	"class": (
+		wrap,
+		rewrap,
+		nowrap,
+	),
+	"style": flex-wrap,
+	"value": (
+		wrap,
+		wrap-reverse,
+		nowrap,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Flex
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Flex
+//
+// @flex @grow @shrink
+//================================================================
+//________________________________________________________
+// STUB Flex
+
+@include Sassolith((
+	"class": (
+		flex-1,
+		flex-a,
+		flex-init,
+		flex-none,
+	),
+	"style": flex,
+	"value": (
+		1 1 0%,
+		auto,
+		0 1 auto,
+		none,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+//________________________________________________________
+// STUB Grow
+
+@include Sassolith((
+	"class": (
+		flex-grow-0,
+		flex-grow,
+	),
+	"style": flex-grow,
+	"value": (
+		0,
+		1
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+//________________________________________________________
+// STUB Shrink
+
+@include Sassolith((
+	"class": (
+		flex-shrink-0,
+		flex-shrink,
+	),
+	"style": flex-shrink,
+	"value": (
+		0,
+		1,
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Flex
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Order
+//
+// @order
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": order,
+	"style": order,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": false,
+			),
+			"min": 0,
+			"max": 12,
+			"step": 1,
+		),
+	),
+));
+
+// !SECTION Order
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Justify
+//
+// @justify @content @items @self
+//================================================================
+//________________________________________________________
+// STUB Self
+
+@include Sassolith((
+	"class": (
+		ju-s,
+		ju-e,
+		ju-c,
+		ju-sb,
+		ju-sa,
+		ju-se,
+	),
+	"style": justify-content,
+	"value": (
+		flex-start,
+		flex-end,
+		center,
+		space-between,
+		space-around,
+		space-evenly,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+//________________________________________________________
+// STUB Items
+
+@include Sassolith((
+	"class": (
+		jui-a,
+		jui-s,
+		jui-e,
+		jui-c,
+		jui-str,
+	),
+	"style": justify-items,
+	"value": (
+		auto,
+		start,
+		end,
+		center,
+		stretch,
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+//________________________________________________________
+// STUB Self
+
+@include Sassolith((
+	"class": (
+		jus-a,
+		jus-s,
+		jus-e,
+		jus-c,
+		jus-str,
+	),
+	"style": justify-self,
+	"value": (
+		auto,
+		start,
+		end,
+		center,
+		stretch,
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Justify
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Align
+//
+// @align @ac @ai @as
+//================================================================
+//________________________________________________________
+// STUB Content
+
+@include Sassolith((
+	"class": (
+		ac-c,
+		ac-s,
+		ac-e,
+		ac-sb,
+		ac-sa,
+		ac-se,
+	),
+	"style": align-content,
+	"value": (
+		center,
+		flex-start,
+		flex-end,
+		space-between,
+		space-around,
+		space-evenly,
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+//________________________________________________________
+// STUB Items
+
+@include Sassolith((
+	"class": (
+		ai-s,
+		ai-e,
+		ai-c,
+		ai-b,
+		ai-str,
+	),
+	"style": align-items,
+	"value": (
+		flex-start,
+		flex-end,
+		center,
+		baseline,
+		stretch,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+//________________________________________________________
+// STUB Self
+
+@include Sassolith((
+	"class": (
+		as-a,
+		as-s,
+		as-e,
+		as-c,
+		as-str,
+	),
+	"style": align-self,
+	"value": (
+		auto,
+		flex-start,
+		flex-end,
+		center,
+		stretch,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Align
+//________________________________________________________

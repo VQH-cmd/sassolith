@@ -1,0 +1,90 @@
+//________________________________________________________
+// STUB Basic
+
+@include Sassolith((
+	"class": (
+		box-border,
+		box-content,
+	),
+	"style": box-sizing,
+	"value": (
+		border-box,
+		content-box,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"state": (
+			//"::placeholder",
+			//"::selection",
+			//":required",
+			//":active",
+			//":focus",
+			//":focus-within",
+			":hover",
+			//":visited",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Color
+
+@include Sassolith((
+	"class": pco,
+	"style": color,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"isColor": true,
+		"state": (
+			//"::placeholder",
+			//"::selection",
+			//":required",
+			//":active",
+			//":focus",
+			//":focus-within",
+			":hover",
+			//":visited",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Formula
+
+@include Sassolith((
+	"class": h,
+	"style": height,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vh",
+				"value": "vh",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//"::placeholder",
+			//"::selection",
+			//":required",
+			//":active",
+			//":focus",
+			//":focus-within",
+			":hover",
+			//":visited",
+		),
+	),
+));
+
+//________________________________________________________

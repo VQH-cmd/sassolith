@@ -1,0 +1,225 @@
+//================================================================
+// SECTION Opacity
+//
+// @opacity
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": opa,
+	"style": opacity,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": false,
+			),
+			"ratio": calc(1/100),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Opacity
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Transition Duration
+//
+// @transition @duration
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": dur,
+	"style": transition-duration,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "ms",
+			),
+			"min": 0,
+			"max": 5000,
+			"step": 100,
+		),
+	),
+));
+
+// !SECTION Transition Duration
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Transition Delay
+//
+// @transition @delay
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": delay,
+	"style": transition-delay,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "ms",
+			),
+			"min": 0,
+			"max": 5000,
+			"step": 100,
+		),
+	),
+));
+
+// !SECTION Transition Delay
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Transition Timing Function
+//
+// @transition @timing @function @ttf
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		ttf,
+		ttf-linear,
+	),
+	"style": transition-timing-function,
+	"value": (
+		map-get($timing_function, ttf),
+		linear,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+// !SECTION Transition Timing Function
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Blend Mode
+//
+// @blend @mode @bm
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		bm-normal,
+		bm-multiply,
+		bm-screen,
+		bm-overlay,
+		bm-darken,
+		bm-lighten,
+		bm-colorDodge,
+		bm-colorBurn,
+		bm-hardLight,
+		bm-softLight,
+		bm-difference,
+		bm-exclusion,
+		bm-hue,
+		bm-saturation,
+		bm-color,
+		bm-luminosity,
+	),
+	"style": mix-blend-mode,
+	"value": (
+		normal,
+		multiply,
+		screen,
+		overlay,
+		darken,
+		lighten,
+		color-dodge,
+		color-burn,
+		hard-light,
+		soft-light,
+		difference,
+		exclusion,
+		hue,
+		saturation,
+		color,
+		luminosity,
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Blend Mode
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Filter
+//
+// @filter
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		fil-none,
+		fil-grayscale,
+		fil-white,
+	),
+	"style": filter,
+	"value": (
+		none,
+		grayscale(100%),
+		'brightness(0) invert(1)',
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Filter
+//________________________________________________________

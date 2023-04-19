@@ -1,0 +1,510 @@
+//================================================================
+// SECTION Box Sizing
+//
+// @box @sizing
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		box-border,
+		box-content,
+	),
+	"style": box-sizing,
+	"value": (
+		border-box,
+		content-box,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Box Sizing
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Display
+//
+// @display
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		block,
+		iblock,
+		flex,
+		iflex,
+		inline,
+		tab,
+		tab-cap,
+		tab-cell,
+		tab-col,
+		tab-col-g,
+		tab-head-g,
+		tab-foot-g,
+		tab-row-g,
+		tab-row,
+		contents,
+		hide,
+		grid,
+	),
+	"style": display,
+	"value": (
+		block,
+		inline-block,
+		flex,
+		inline-flex,
+		inline,
+		table,
+		table-caption,
+		table-cell,
+		table-column,
+		table-column-group,
+		table-header-group,
+		table-footer-group,
+		table-row-group,
+		table-row,
+		contents,
+		none,
+		grid,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Display
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Float
+//
+// @float
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		fl,
+		fr,
+		fn,
+	),
+	"style": float,
+	"value": (
+		left,
+		right,
+		none,
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Float
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Overflow
+//
+// @overflow @of
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		of-auto,
+		of-hide,
+		of-show,
+		of-scroll,
+
+		ofx-auto,
+		ofx-hide,
+		ofx-show,
+		ofx-scroll,
+
+		ofy-auto,
+		ofy-hide,
+		ofy-show,
+		ofy-scroll,
+	),
+	"style": (
+		overflow,
+		overflow,
+		overflow,
+		overflow,
+
+		overflow-x,
+		overflow-x,
+		overflow-x,
+		overflow-x,
+
+		overflow-y,
+		overflow-y,
+		overflow-y,
+		overflow-y,
+	),
+	"value": (
+		auto,
+		hidden,
+		visible,
+		scroll,
+
+		auto,
+		hidden,
+		visible,
+		scroll,
+
+		auto,
+		hidden,
+		visible,
+		scroll,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Overflow
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Position
+//
+// @position
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		pos-r,
+		pos-a,
+		pos-f,
+		pos-s,
+		pos-st,
+	),
+	"style": position,
+	"value": (
+		relative,
+		absolute,
+		fixed,
+		static,
+		sticky,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Position
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Visibility
+//
+// @visibility
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		vis,
+		invis,
+	),
+	"style": visibility,
+	"value": (
+		visible,
+		hidden,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Visibility
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Z-Index
+//
+// @zindex @z @index
+//================================================================
+//________________________________________________________
+// STUB Auto
+
+@include Sassolith((
+	"class": z-a,
+	"style": z-index,
+	"value": auto,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+//________________________________________________________
+// STUB Formula
+
+@include Sassolith((
+	"class": z,
+	"style": z-index,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": false,
+			),
+			"min": -1,
+			"max": 100,
+			"step": 1,
+		),
+	),
+));
+
+// !SECTION Z-Index
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Top Right Bottom Left
+//
+// @top @right @bottom @left
+//================================================================
+//________________________________________________________
+// STUB Auto
+
+@include Sassolith((
+	"class": (
+		t-a,
+		r-a,
+		b-a,
+		l-a,
+	),
+	"style": (
+		top,
+		right,
+		bottom,
+		left,
+	),
+	"value": auto,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Formula
+
+@include Sassolith((
+	"class": (
+		t,
+		r,
+		b,
+		l,
+	),
+	"style": (
+		top,
+		right,
+		bottom,
+		left,
+	),
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": -100,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Percent
+
+@include Sassolith((
+	"class": (
+		t,
+		r,
+		b,
+		l,
+	),
+	"style": (
+		top,
+		right,
+		bottom,
+		left,
+	),
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "p",
+				"value": "%",
+			),
+			"min": -100,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Top Right Bottom Left
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Centering
+//
+// @centering
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		center-a,
+		center-ax,
+		center-ay,
+	),
+	"style": (
+		(transform, top, left),
+		(transform, left),
+		(transform, top),
+	),
+	"value": (
+		(translate(-50%, -50%), 50%, 50%),
+		(translateX(-50%), 50%),
+		(translateY(-50%), 50%),
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+// !SECTION Centering
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Object
+//
+// @object @fit @position
+//================================================================
+//________________________________________________________
+// STUB Fit
+
+@include Sassolith((
+	"class": (
+		objf-contain,
+		objf-cover,
+		objf-fill,
+		objf-scale,
+		objf-none,
+	),
+	"style": object-fit,
+	"value": (
+		contain,
+		cover,
+		fill,
+		scale-down,
+		none,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+//________________________________________________________
+// STUB Position
+
+@include Sassolith((
+	"class": (
+		objp-l,
+		objp-r,
+		objp-c,
+		objp-t,
+		objp-b,
+	),
+	"style": object-position,
+	"value": (
+		left,
+		right,
+		center,
+		top,
+		bottom,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+// !SECTION Object
+//________________________________________________________

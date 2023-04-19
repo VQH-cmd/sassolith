@@ -1,0 +1,88 @@
+//================================================================
+// SECTION Fill
+//
+// @fill
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": fill,
+	"style": fill,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"isColor": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Fill
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Stroke
+//
+// @stroke
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": stroke,
+	"style": stroke,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"isColor": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Stroke
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Stroke Width
+//
+// @stroke @width
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": stroke,
+	"style": stroke-width,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": false,
+			),
+			"min": 0,
+			"max": 12,
+			"step": 1,
+		),
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Stroke Width
+//________________________________________________________

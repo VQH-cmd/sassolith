@@ -1,0 +1,38 @@
+{
+	"name": "@vqh-cmd/sassolith",
+	"version": "2.0.0",
+	"description": "",
+	"main": "index.sass",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/VQH-cmd/sassolith"
+	},
+	"keywords": [
+		"sass",
+		"scss",
+		"sassolith",
+		"utility",
+		"utilities",
+		"vqh-cmd",
+		"vqh.cmd",
+		"vqhcmd"
+	],
+	"author": {
+		"name": "VQH-cmd",
+		"email": "VQH.cmd@gmail.com",
+		"url": "https://VQH-cmd.github.io"
+	},
+	"scripts": {
+		"d": "sass --no-source-map --watch example/style.sass test/style.css",
+		"b": "sass --no-source-map example/style.sass test/style.css"
+	},
+	"license": "Private",
+	"private": true,
+	"bugs": {
+		"url": "https://github.com/VQH-cmd/sassolith/issues"
+	},
+	"homepage": "https://github.com/VQH-cmd/sassolith",
+	"dependencies": {
+		"sass": "^1.62.0"
+	}
+}

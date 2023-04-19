@@ -1,0 +1,722 @@
+//================================================================
+// SECTION Width
+//
+// @width
+//================================================================
+//________________________________________________________
+// STUB Auto Unset None
+
+@include Sassolith((
+	"class": (
+		w-a,
+		w-none,
+		maxw-none,
+		minw-none,
+	),
+	"style": (
+		width,
+		width,
+		max-width,
+		min-width,
+	),
+	"value": (
+		auto,
+		unset,
+		unset,
+		unset,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Default
+
+@include Sassolith((
+	"class": w,
+	"style": width,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 0,
+			"max": 1200,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Default Percent
+
+@include Sassolith((
+	"class": w,
+	"style": width,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "p",
+				"value": "%",
+			),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Min
+
+@include Sassolith((
+	"class": minw,
+	"style": min-width,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 0,
+			"max": 1500,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Min Percent
+
+@include Sassolith((
+	"class": minw,
+	"style": min-width,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "p",
+				"value": "%",
+			),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Max
+
+@include Sassolith((
+	"class": maxw,
+	"style": max-width,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 0,
+			"max": 1200,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Max Percent
+
+@include Sassolith((
+	"class": maxw,
+	"style": max-width,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "p",
+				"value": "%",
+			),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB VW
+
+@include Sassolith((
+	"class": w,
+	"style": width,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vw",
+				"value": "vw",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB VH
+
+@include Sassolith((
+	"class": w,
+	"style": width,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vh",
+				"value": "vh",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB min-VW
+
+@include Sassolith((
+	"class": minw,
+	"style": min-width,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vw",
+				"value": "vw",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB min-VH
+
+@include Sassolith((
+	"class": minw,
+	"style": min-width,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vh",
+				"value": "vh",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB max-VW
+
+@include Sassolith((
+	"class": maxw,
+	"style": max-width,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vw",
+				"value": "vw",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB max-VH
+
+@include Sassolith((
+	"class": maxw,
+	"style": max-width,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vh",
+				"value": "vh",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Width
+//________________________________________________________
+
+
+
+
+
+
+
+
+//================================================================
+// SECTION Height
+//
+// @height
+//================================================================
+//________________________________________________________
+// STUB Auto Unset None
+
+@include Sassolith((
+	"class": (
+		h-a,
+		h-none,
+		maxh-none,
+		minh-none,
+	),
+	"style": (
+		height,
+		height,
+		max-height,
+		min-height,
+	),
+	"value": (
+		auto,
+		unset,
+		unset,
+		unset,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Default
+
+@include Sassolith((
+	"class": h,
+	"style": height,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 0,
+			"max": 800,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Default Percent
+
+@include Sassolith((
+	"class": h,
+	"style": height,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "p",
+				"value": "%",
+			),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Min
+
+@include Sassolith((
+	"class": minh,
+	"style": min-height,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 0,
+			"max": 800,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Min Percent
+
+@include Sassolith((
+	"class": minh,
+	"style": min-height,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "p",
+				"value": "%",
+			),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Max
+
+@include Sassolith((
+	"class": maxh,
+	"style": max-height,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 0,
+			"max": 800,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Max Percent
+
+@include Sassolith((
+	"class": maxh,
+	"style": max-height,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "p",
+				"value": "%",
+			),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB VW
+
+@include Sassolith((
+	"class": h,
+	"style": height,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vw",
+				"value": "vw",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB VH
+
+@include Sassolith((
+	"class": h,
+	"style": height,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vh",
+				"value": "vh"
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB min-VW
+
+@include Sassolith((
+	"class": minh,
+	"style": min-height,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vw",
+				"value": "vw",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB min-VH
+
+@include Sassolith((
+	"class": minh,
+	"style": min-height,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vh",
+				"value": "vh",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB max-VW
+
+@include Sassolith((
+	"class": maxh,
+	"style": max-height,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vw",
+				"value": "vw",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB max-VH
+
+@include Sassolith((
+	"class": maxh,
+	"style": max-height,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vh",
+				"value": "vh",
+			),
+			"ratio": calc(1/10),
+			"min": 0,
+			"max": 1000,
+			"step": 50,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Height
+//________________________________________________________

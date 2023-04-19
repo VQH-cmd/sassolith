@@ -1,0 +1,411 @@
+//================================================================
+// REVIEW Transforms
+//
+// @transforms
+//================================================================
+//________________________________________________________
+
+$transforms: false;
+
+@if $transforms {
+	:root {
+		--trans-translate-x: 0;
+		--trans-translate-y: 0;
+		--trans-rotate: 0;
+		--trans-rotate-x: 0;
+		--trans-rotate-y: 0;
+		--trans-skew-x: 0;
+		--trans-skew-y: 0;
+		--trans-scale-x: 1;
+		--trans-scale-y: 1;
+	}
+	.trans {
+		transform:
+			translateX(var(--trans-translate-x))
+			translateY(var(--trans-translate-y))
+			rotate(var(--trans-rotate))
+			skewX(var(--trans-skew-x))
+			skewY(var(--trans-skew-y))
+			scaleX(var(--trans-scale-x))
+			scaleY(var(--trans-scale-y))
+	}
+}
+
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Scale
+//
+// @scale
+//================================================================
+//________________________________________________________
+// REVIEW Data
+
+$trans-scale: (
+	"active": true,
+	"important": false,
+	"responsive": true,
+	"formula": (
+		"unit": (
+			"class": false,
+			"value": false,
+		),
+		"ratio": calc(1/100),
+		"min": 0,
+		"max": 200,
+		"step": 5,
+	),
+	"state": (
+		":hover",
+	),
+);
+
+//________________________________________________________
+// STUB Var
+
+@if $transforms {
+	@include Sassolith((
+		"class": (
+			scale,
+			scaleX,
+			scaleY,
+		),
+		"style": (
+			(--trans-scale-x, --trans-scale-y),
+			--trans-scale-x,
+			--trans-scale-y,
+		),
+		"value": false,
+		"data": $trans-scale,
+	));
+}
+
+//________________________________________________________
+// STUB Trans
+
+@include Sassolith((
+	"class": (
+		trans-scale,
+		trans-scaleX,
+		trans-scaleY,
+	),
+	"style": transform,
+	"value": (
+		scale,
+		scaleX,
+		scaleY,
+	),
+	"data": $trans-scale,
+));
+
+// !SECTION Scale
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Rotate
+//
+// @rotate
+//================================================================
+//________________________________________________________
+// REVIEW Data
+
+$trans-rotate: (
+	"active": true,
+	"important": false,
+	"responsive": true,
+	"formula": (
+		"unit": (
+			"class": false,
+			"value": "deg",
+		),
+		"min": -180,
+		"max": 180,
+		"step": 45,
+	),
+	"state": (
+		":hover",
+	),
+);
+
+//________________________________________________________
+// STUB Var
+
+@if $transforms {
+	@include Sassolith((
+		"class": (
+			rotate,
+			rotateX,
+			rotateY,
+		),
+		"style": (
+			--trans-rotate,
+			--trans-rotate-x,
+			--trans-rotate-y,
+		),
+		"value": false,
+		"data": $trans-rotate,
+	));
+}
+
+//________________________________________________________
+// STUB Trans
+
+@include Sassolith((
+	"class": (
+		trans-rotate,
+		trans-rotateX,
+		trans-rotateY,
+	),
+	"style": transform,
+	"value": (
+		rotate,
+		rotateX,
+		rotateY,
+	),
+	"data": $trans-rotate,
+));
+
+// !SECTION Rotate
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Translate
+//
+// @translate
+//================================================================
+//________________________________________________________
+// REVIEW Var
+
+$trans-transforms: (
+	"active": false,
+	"important": false,
+	"responsive": true,
+	"formula": (
+		"unit": (
+			"class": false,
+			"value": "px"
+		),
+		"min": -100,
+		"max": 100,
+		"step": 5,
+	),
+	"state": (
+		":hover",
+	),
+);
+
+$trans-transforms-percent: (
+	"active": true,
+	"important": false,
+	"responsive": true,
+	"formula": (
+		"unit": (
+			"class": "p",
+			"value": "%",
+		),
+		"min": -100,
+		"max": 100,
+		"step": 100,
+	),
+	"state": (
+		":hover",
+	),
+);
+
+//________________________________________________________
+// STUB Var
+
+@if $transforms {
+	@include Sassolith((
+		"class": (
+			translateX,
+			translateY,
+		),
+		"style": (
+			--trans-translate-x,
+			--trans-translate-y,
+		),
+		"value": false,
+		"data": $trans-transforms,
+	));
+	@include Sassolith((
+		"class": (
+			translateX,
+			translateY,
+		),
+		"style": (
+			--trans-translate-x,
+			--trans-translate-y,
+		),
+		"value": false,
+		"data": $trans-transforms-percent,
+	));
+}
+
+//________________________________________________________
+// STUB Trans
+
+@include Sassolith((
+	"active": false,
+	"class": (
+		trans-translateX,
+		trans-translateY,
+	),
+	"style": transform,
+	"value": (
+		translateX,
+		translateY,
+	),
+	"data": $trans-transforms,
+));
+
+@include Sassolith((
+	"active": true,
+	"class": (
+		trans-translateX,
+		trans-translateY,
+	),
+	"style": transform,
+	"value": (
+		translateX,
+		translateY,
+	),
+	"data": $trans-transforms-percent,
+));
+
+// !SECTION Translate
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Skew
+//
+// @skew
+//================================================================
+//________________________________________________________
+// REVIEW Data
+
+$trans-skew: (
+	"active": false,
+	"important": false,
+	"responsive": true,
+	"formula": (
+		"unit": (
+			"class": false,
+			"value": "deg",
+		),
+		"min": -45,
+		"max": 45,
+		"step": 3,
+	),
+	"state": (
+		":hover",
+	),
+);
+
+//________________________________________________________
+// STUB Var
+
+@if $transforms {
+	@include Sassolith((
+		"class": (
+			skewX,
+			skewY,
+		),
+		"style": (
+			--trans-skew-x,
+			--trans-skew-y,
+		),
+		"value": false,
+		"data": $trans-skew,
+	));
+}
+
+//________________________________________________________
+// STUB Trans
+
+@include Sassolith((
+	"class": (
+		trans-skewX,
+		trans-skewY,
+	),
+	"style": transform,
+	"value": (
+		skewX,
+		skewY,
+	),
+	"data": $trans-skew,
+));
+
+// !SECTION Skew
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Transform Origin
+//
+// @transform @origin @none
+//================================================================
+//________________________________________________________
+// STUB Origin
+
+@include Sassolith((
+	"class": (
+		origin-c,
+		origin-t,
+		origin-tr,
+		origin-r,
+		origin-br,
+		origin-b,
+		origin-bl,
+		origin-l,
+		origin-tl,
+	),
+	"style": transform-origin,
+	"value": (
+		center,
+		top,
+		top right,
+		right,
+		bottom right,
+		bottom,
+		bottom left,
+		left,
+		top left,
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+//________________________________________________________
+// STUB None
+
+@include Sassolith((
+	"class": trans-none,
+	"style": transform,
+	"value": none,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Transform Origin
+//________________________________________________________

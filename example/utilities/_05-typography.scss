@@ -1,0 +1,699 @@
+//================================================================
+// SECTION Fonts Family
+//
+// @font @face @ff
+//================================================================
+//________________________________________________________
+// REVIEW Fonts
+
+@include SassolithFont((
+	"family": "Roboto",
+	"name": "font1",
+	"weight": (100, 200, 300, 400, 500, 600, 700, 800, 900),
+	"style": (normal, italic),
+	"src": "../fonts/",
+	"format": (ttf, otf),
+));
+
+//________________________________________________________
+// STUB Utility
+
+@include Sassolith((
+	"class": (
+		ff-0,
+		ff-1,
+		ff-2,
+		ff-3,
+	),
+	"style": font-family,
+	"value": (
+		"#{$ff}",
+		"'M PLUS Rounded 1c', sans-serif",
+		"'Noto Serif JP', serif",
+		"'Saira Stencil One', cursive",
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+// !SECTION Fonts Family
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Font Size
+//
+// @font @size @fs
+//================================================================
+//________________________________________________________
+// STUB Default
+
+@include Sassolith((
+	"class": fs,
+	"style": font-size,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 10,
+			"max": 64,
+			"step": 1,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB VW
+
+@include Sassolith((
+	"class": fs,
+	"style": font-size,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vw",
+				"value": "vw",
+			),
+			"ratio": calc(1/10),
+			"min": 1,
+			"max": 300,
+			"step": 10,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB VH
+
+@include Sassolith((
+	"class": fs,
+	"style": font-size,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "vw",
+				"value": "vw",
+			),
+			"ratio": calc(1/10),
+			"min": 1,
+			"max": 300,
+			"step": 10,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Font Size
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Font Style
+//
+// @font @style @fsty
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		fsty-i,
+		fsty-n,
+	),
+	"style": font-style,
+	"value": (
+		italic,
+		normal,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Font Style
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Font Weight
+//
+// @font @weight @fw
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		fw-100,
+		fw-200,
+		fw-300,
+		fw-400,
+		fw-500,
+		fw-600,
+		fw-700,
+		fw-800,
+		fw-900,
+	),
+	"style": font-weight,
+	"value": (
+		100,
+		200,
+		300,
+		400,
+		500,
+		600,
+		700,
+		800,
+		900,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Font Weight
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Letter Spacing
+//
+// @letter @spacing @ls
+//================================================================
+//________________________________________________________
+// STUB Default
+
+@include Sassolith((
+	"class": ls,
+	"style": letter-spacing,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": -5,
+			"max": 10,
+			"step": 1,
+		),
+		"state": (
+			":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB em
+
+@include Sassolith((
+	"class": ls,
+	"style": letter-spacing,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "em",
+				"value": "em",
+			),
+			"ratio": calc(1/100),
+			"min": -200,
+			"max": 200,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Letter Spacing
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Line Height
+//
+// @line @height @lh
+//================================================================
+//________________________________________________________
+// STUB Default
+
+@include Sassolith((
+	"class": lh,
+	"style": line-height,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 10,
+			"max": 64,
+			"step": 1,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Ratio
+
+@include Sassolith((
+	"class": lh,
+	"style": line-height,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "r",
+				"value": false,
+			),
+			"ratio": calc(1/100),
+			"min": 100,
+			"max": 300,
+			"step": 10,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Line Height
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Text Align
+//
+// @text @align @ta
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		ta-l,
+		ta-c,
+		ta-r,
+		ta-j,
+	),
+	"style": text-align,
+	"value": (
+		left,
+		center,
+		right,
+		justify,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Text Align
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Color
+//
+// @text @color
+//================================================================
+//________________________________________________________
+// STUB Default
+
+@include Sassolith((
+	"class": co,
+	"style": color,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"isColor": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Placeholder
+
+@include Sassolith((
+	"class": pco,
+	"style": color,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"isColor": true,
+		"state": (
+			"::placeholder",
+			":hover",
+		),
+	),
+));
+
+// !SECTION Color
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Text Decoration
+//
+// @text @decoration @td
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		td-u,
+		td-lt,
+		td-none,
+	),
+	"style": text-decoration,
+	"value": (
+		underline,
+		line-through,
+		none,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Text Decoration
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Text Transform
+//
+// @text @transform @tt
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		tt-up,
+		tt-low,
+		tt-cap,
+		tt-none,
+	),
+	"style": text-transform,
+	"value": (
+		uppercase,
+		lowercase,
+		capitalize,
+		none,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Text Transform
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Vertical Alignment
+//
+// @vertical @align @va
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		va-base,
+		va-top,
+		va-mid,
+		va-bot,
+		va-ttop,
+		va-tbot,
+	),
+	"style": vertical-align,
+	"value": (
+		baseline,
+		top,
+		middle,
+		bottom,
+		text-top,
+		text-bottom,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Vertical Alignment
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Whitespace
+//
+// @whitespace @ws
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		ws-normal,
+		ws-nowrap,
+		ws-pre,
+		ws-preline,
+		ws-prewrap,
+	),
+	"style": white-space,
+	"value": (
+		normal,
+		nowrap,
+		pre,
+		pre-line,
+		pre-wrap,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Whitespace
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Word Break
+//
+// @wb @word @break
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		wb-normal,
+		wb-bw,
+		wb-ba,
+		wb-ka,
+	),
+	"style": word-break,
+	"value": (
+		normal,
+		break-word,
+		break-all,
+		keep-all,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Word Break
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION List Style Type
+//
+// @list @style @type
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		list-none,
+		list-disc,
+		list-decimal,
+	),
+	"style": list-style-type,
+	"value": (
+		none,
+		disc,
+		decimal,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": false,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION List Style Type
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION List Style Position
+//
+// @list @style @position
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		list-in,
+		list-out,
+	),
+	"style": list-style-position,
+	"value": (
+		inside,
+		outside,
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": false,
+	),
+));
+
+// !SECTION List Style Position
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Write Mode
+//
+// @write @mode @wm
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		wm-h,
+		wm-v,
+	),
+	"style": writing-mode,
+	"value": (
+		horizontal-tb,
+		vertical-rl,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Write Mode
+//________________________________________________________

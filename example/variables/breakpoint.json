@@ -1,0 +1,8 @@
+{
+	"media": {
+		"print": "print",
+		"screen": "screen",
+		"xs": "'screen and (max-width: 600px)'",
+		"sm": "'screen and (max-width: 800px)'"
+	}
+}

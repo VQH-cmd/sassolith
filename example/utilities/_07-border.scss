@@ -1,0 +1,267 @@
+//================================================================
+// SECTION Border Radius
+//
+// @bd @border @radius @bdra
+//================================================================
+//________________________________________________________
+// STUB Default
+
+@include Sassolith((
+	"class": (
+		bdra,
+		bdra-tl,
+		bdra-tr,
+		bdra-bl,
+		bdra-br,
+	),
+	"style": (
+		border-radius,
+		border-top-left-radius,
+		border-top-right-radius,
+		border-bottom-left-radius,
+		border-bottom-right-radius,
+	),
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 0,
+			"max": 200,
+			"step": 5,
+		),
+		"state": (
+			":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Percent
+
+@include Sassolith((
+	"class": (
+		bdra,
+		bdra-tl,
+		bdra-tr,
+		bdra-bl,
+		bdra-br,
+	),
+	"style": (
+		border-radius,
+		border-top-left-radius,
+		border-top-right-radius,
+		border-bottom-left-radius,
+		border-bottom-right-radius,
+	),
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "p",
+				"value": "%",
+			),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Border Radius
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Border Width
+//
+// @bd @border @width @bdw
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": bdw,
+	"style": border-width,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 0,
+			"max": 12,
+			"step": 1,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Border Width
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Border Color
+//
+// @bd @border @color @bdc
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": bdc,
+	"style": border-color,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"isColor": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Border Color
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Border Style
+//
+// @bd @border @style
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		bd-solid,
+		bd-dashed,
+		bd-dotted,
+		bd-double,
+		bd-none,
+
+		bdt-solid,
+		bdr-solid,
+		bdb-solid,
+		bdl-solid,
+
+		bdt-dashed,
+		bdr-dashed,
+		bdb-dashed,
+		bdl-dashed,
+
+		bdt-dotted,
+		bdr-dotted,
+		bdb-dotted,
+		bdl-dotted,
+
+		bdt-double,
+		bdr-double,
+		bdb-double,
+		bdl-double,
+
+		bdt-none,
+		bdr-none,
+		bdb-none,
+		bdl-none,
+	),
+	"style": (
+		border-style,
+		border-style,
+		border-style,
+		border-style,
+		border-style,
+
+		border-top-style,
+		border-right-style,
+		border-bottom-style,
+		border-left-style,
+
+		border-top-style,
+		border-right-style,
+		border-bottom-style,
+		border-left-style,
+
+		border-top-style,
+		border-right-style,
+		border-bottom-style,
+		border-left-style,
+
+		border-top-style,
+		border-right-style,
+		border-bottom-style,
+		border-left-style,
+
+		border-top-style,
+		border-right-style,
+		border-bottom-style,
+		border-left-style,
+	),
+	"value": (
+		solid,
+		dashed,
+		dotted,
+		double,
+		none,
+
+		solid,
+		solid,
+		solid,
+		solid,
+
+		dashed,
+		dashed,
+		dashed,
+		dashed,
+
+		dotted,
+		dotted,
+		dotted,
+		dotted,
+
+		double,
+		double,
+		double,
+		double,
+
+		none,
+		none,
+		none,
+		none,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Border Style
+//________________________________________________________

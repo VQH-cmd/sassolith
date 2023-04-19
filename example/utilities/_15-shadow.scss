@@ -1,0 +1,49 @@
+//================================================================
+// SECTION Shadow
+//
+// @shadow
+//================================================================
+//________________________________________________________
+// STUB Box
+
+@include Sassolith((
+	"class": (
+		bs-1,
+	),
+	"style": box-shadow,
+	"value": (
+		0px 0px 10px #{co(txt)},
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Text
+
+@include Sassolith((
+	"class": (
+		ts-1,
+	),
+	"style": text-shadow,
+	"value": (
+		(0 0 3px co(txt), 0 0 6px co(txt)),
+	),
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Shadow
+//________________________________________________________

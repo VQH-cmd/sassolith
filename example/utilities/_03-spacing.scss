@@ -1,0 +1,212 @@
+//================================================================
+// SECTION Padding
+//
+// @padding
+//================================================================
+//________________________________________________________
+// STUB Default
+
+@include Sassolith((
+	"class": (
+		p, px, py, pt, pr, pb, pl,
+	),
+	"style": (
+		padding,
+		(padding-left, padding-right),
+		(padding-top, padding-bottom),
+		padding-top,
+		padding-right,
+		padding-bottom,
+		padding-left,
+	),
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 0,
+			"max": 200,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Percent
+
+@include Sassolith((
+	"class": (
+		p, px, py, pt, pr, pb, pl
+	),
+	"style": (
+		padding,
+		(padding-left, padding-right),
+		(padding-top, padding-bottom),
+		padding-top,
+		padding-right,
+		padding-bottom,
+		padding-left,
+	),
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "p",
+				"value": "%",
+			),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Aspect Ratio
+
+@include Sassolith((
+	"class": (
+		pb-as-16\/9,
+	),
+	"style": (
+		padding-bottom,
+	),
+	"value": (
+		calc(100% / calc(16/9)),
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Padding
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Margin
+//
+// @margin
+//================================================================
+//________________________________________________________
+// STUB Auto
+
+@include Sassolith((
+	"class": (
+		m-a, mx-a, my-a, mt-a, mr-a, mb-a, ml-a,
+	),
+	"style": (
+		margin,
+		(margin-left, margin-right),
+		(margin-top, margin-bottom),
+		margin-top,
+		margin-right,
+		margin-bottom,
+		margin-left,
+	),
+	"value": auto,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Formula
+
+@include Sassolith((
+	"class": (
+		m, mx, my, mt, mr, mb, ml,
+	),
+	"style": (
+		margin,
+		(margin-left, margin-right),
+		(margin-top, margin-bottom),
+		margin-top,
+		margin-right,
+		margin-bottom,
+		margin-left,
+	),
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": -200,
+			"max": 200,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Percent
+
+@include Sassolith((
+	"class": (
+		m, mx, my, mt, mr, mb, ml,
+	),
+	"style": (
+		margin,
+		(margin-left, margin-right),
+		(margin-top, margin-bottom),
+		margin-top,
+		margin-right,
+		margin-bottom,
+		margin-left,
+	),
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "p",
+				"value": "%",
+			),
+			"min": -100,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Margin
+//________________________________________________________

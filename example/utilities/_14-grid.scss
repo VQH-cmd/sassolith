@@ -1,0 +1,153 @@
+//================================================================
+// SECTION Template Column
+//
+// @template @column
+//================================================================
+//________________________________________________________
+// STUB Auto
+
+@include Sassolith((
+	"class": (
+		grid-col-6,
+		grid-col-5,
+		grid-col-4,
+		grid-col-3,
+		grid-col-2,
+		grid-col-1,
+	),
+	"style": grid-template-columns,
+	"value": (
+		"auto auto auto auto auto auto",
+		"auto auto auto auto auto",
+		"auto auto auto auto",
+		"auto auto auto",
+		"auto auto",
+		"auto",
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+//________________________________________________________
+// STUB Percent
+
+@include Sassolith((
+	"class": (
+		grid-col-6p,
+		grid-col-5p,
+		grid-col-4p,
+		grid-col-3p,
+		grid-col-2p,
+		grid-col-1p,
+	),
+	"style": grid-template-columns,
+	"value": (
+		"#{calc(100/6)}% #{calc(100/6)}% #{calc(100/6)}% #{calc(100/6)}% #{calc(100/6)}% #{calc(100/6)}%",
+		"#{calc(100/5)}% #{calc(100/5)}% #{calc(100/5)}% #{calc(100/5)}% #{calc(100/5)}%",
+		"#{calc(100/4)}% #{calc(100/4)}% #{calc(100/4)}% #{calc(100/4)}%",
+		"#{calc(100/3)}% #{calc(100/3)}% #{calc(100/3)}%",
+		"#{calc(100/2)}% #{calc(100/2)}%",
+		"#{calc(100/1)}%",
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Template Column
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Gap
+//
+// @gap
+//================================================================
+//________________________________________________________
+// STUB Column
+
+@include Sassolith((
+	"class": col-gap,
+	"style": column-gap,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+	),
+));
+
+//________________________________________________________
+// STUB Row
+
+@include Sassolith((
+	"class": row-gap,
+	"style": row-gap,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": "px",
+			),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+	),
+));
+
+// !SECTION Gap
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Column Count
+//
+// @column @count
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": col,
+	"style": column-count,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": false,
+				"value": false,
+			),
+			"min": 0,
+			"max": 8,
+			"step": 1,
+		),
+	),
+));
+
+// !SECTION Column Count
+//________________________________________________________

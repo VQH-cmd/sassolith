@@ -1,0 +1,318 @@
+//================================================================
+// SECTION Background None
+//
+// @bg @none
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		bg-none,
+		bgc-none,
+	),
+	"style": (
+		background,
+		background-color,
+	),
+	"value": (
+		none,
+		transparent,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Background None
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Background Color
+//
+// @bgc @color
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": bgc,
+	"style": background-color,
+	"value": false,
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+		"isColor": true,
+		"state": (
+			":hover",
+		),
+	),
+));
+
+// !SECTION Background Color
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Background Image
+//
+// @bgi @image
+//================================================================
+//________________________________________________________
+// STUB String Extractor
+
+//$bgi_str: map-merge(
+//	map-deep-get($theme, default, category, gradient),
+//	map-deep-get($theme, default, category, image)
+//);
+
+$bgi_class: ();
+$bgi_value: ();
+
+$bgra_class: ();
+$bgra_value: ();
+
+@if map-deep-get($theme, default, category, image) {
+	@each $class, $val in map-deep-get($theme, default, category, image) {
+		$bgi_class: append($bgi_class, 'bgi-'+$class);
+		@if $multiple_theme {
+			$bgi_value: append($bgi_value, var(--image-#{$class}));
+		} @else {
+			$bgi_value: append($bgi_value, $val);
+		}
+	}
+}
+
+@if map-deep-get($theme, default, category, gradient) {
+	@each $class, $val in map-deep-get($theme, default, category, gradient) {
+		$bgra_class: append($bgra_class, 'grad-'+$class);
+		@if $multiple_theme {
+			$bgra_value: append($bgra_value, var(--gradient-#{$class}));
+		} @else {
+			$bgra_value: append($bgra_value, $val);
+		}
+	}
+}
+
+//________________________________________________________
+// STUB Utility: Image
+
+@if map-deep-get($theme, default, category, image) {
+	@include Sassolith((
+		"class": $bgi_class,
+		"style": background-image,
+		"value": $bgi_value,
+		"data": (
+			"active": true,
+			"important": false,
+			"responsive": true,
+			"state": (
+				":hover",
+			),
+		),
+	));
+}
+
+//________________________________________________________
+// STUB Utility: Gradient
+
+@if map-deep-get($theme, default, category, gradient) {
+	@include Sassolith((
+		"class": $bgra_class,
+		"style": background-image,
+		"value": $bgra_value,
+		"data": (
+			"active": true,
+			"important": false,
+			"responsive": true,
+			"state": (
+				":hover",
+			),
+		),
+	));
+}
+
+// !SECTION Background Image
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Background Attachment
+//
+// @bga @attachment
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		bga-fixed,
+		bga-local,
+		bga-scroll,
+	),
+	"style": background-attachment,
+	"value": (
+		fixed,
+		local,
+		scroll,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Background Attachment
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Background Position
+//
+// @bgpos @position
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		bgpos-b,
+		bgpos-c,
+		bgpos-l,
+		bgpos-lb,
+		bgpos-lt,
+		bgpos-r,
+		bgpos-rb,
+		bgpos-rt,
+		bgpos-t,
+	),
+	"style": background-position,
+	"value": (
+		bottom,
+		center,
+		left,
+		left bottom,
+		left top,
+		right,
+		right bottom,
+		right top,
+		top,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Background Position
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Background Repeat
+//
+// @bgr @repeat
+//================================================================
+//________________________________________________________
+
+@include Sassolith((
+	"class": (
+		bgr-re,
+		bgr-nore,
+		bgr-rex,
+		bgr-rey,
+		bgr-reround,
+		bgr-respace,
+	),
+	"style": background-repeat,
+	"value": (
+		repeat,
+		no-repeat,
+		repeat-x,
+		repeat-y,
+		round,
+		space,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+// !SECTION Background Repeat
+//________________________________________________________
+
+
+
+
+//================================================================
+// SECTION Background Size
+//
+// @bgs @size
+//================================================================
+//________________________________________________________
+// STUB Default
+
+@include Sassolith((
+	"class": (
+		bgs-auto,
+		bgs-cover,
+		bgs-contain,
+	),
+	"style": background-size,
+	"value": (
+		auto,
+		cover,
+		contain,
+	),
+	"data": (
+		"active": true,
+		"important": false,
+		"responsive": true,
+	),
+));
+
+//________________________________________________________
+// STUB Formula
+
+@include Sassolith((
+	"class": bgs,
+	"style": background-size,
+	"value": false,
+	"data": (
+		"active": false,
+		"important": false,
+		"responsive": true,
+		"formula": (
+			"unit": (
+				"class": "p",
+				"value": "%",
+			),
+			"min": 0,
+			"max": 100,
+			"step": 5,
+		),
+		"state": (
+			//":hover",
+		),
+	),
+));
+
+// !SECTION Background Size
+//________________________________________________________
